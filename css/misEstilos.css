@@ -1,11 +1,11 @@
 p{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h3, h4, h5, h6{
     font-family: 'Quicksand', sans-serif;
 }
 h1, h2{
-    font-family: 'Anton', sans-serif;
+    margin: 0;
 }
 .subtitle{
     font-family: 'Fjalla One', sans-serif;
@@ -25,7 +25,7 @@ main {
     flex: 1 0 auto;
 }
 .colorFondoMain {
-    background-color: #EDECEA;
+    background-color: rgb(246, 246, 246);
 }
 .icono {
     font-size: 40px;
@@ -69,12 +69,13 @@ footer .row.center {
 #contenedorCategorias{
     background-color: rgb(255, 255, 255);
     padding: 10px 30px;
-
+    margin-bottom: 30px;
 }
 #contenedorCategorias h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 2em;
+    margin: 20px 0 25px 0;
 }
 #contenedorCategorias .elemento-categoria a.titulo-elemento-categoria{
     font-family: 'Quicksand', sans-serif;
@@ -136,40 +137,33 @@ footer .row.center {
 /*====================================================
     -------  C  A  T  E  G  O  R  I  A  S ---------
 ==================================================== */
-.colorTodasCat {
-    background-color: #5AC9C9;
+/*MENU LATERAL DE CATEGORIAS*/
+#catalogo-Contenedor h1.header{
+    margin: 0;
+    padding: 15px;
+    font-size: 4em;
 }
-
-.colorSeccionIndex {
-    background-color: #F7D8A3;
-}
-
-.borde {
-    border: 2px lightgrey solid;
-}
-
-.colorLetrasAzul {
-    color: #3a73a1;
-}
-
-.colorLetrasGris {
-    color: grey;
-}
-
-.estiloCursiva {
-    font-style: italic;
-}
-
-.estiloNegritas {
-    font-weight: 700;
-}
-
-.tamanoLetras {
-    font-size: 22px;
-}
-
-main.colorFondoMain .colorTablaIndex {
+#catalogo-Contenedor #seleccionar-Categoria{
+    background-color: white;
     padding: 10px 20px;
-    box-sizing: border-box;
+    height: 100%;
+}
+#catalogo-Contenedor #seleccionar-Categoria > p{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.246);
+}
+#catalogo-Contenedor #seleccionar-Categoria .titulo-categoria{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*IMAGENES DE LAS POSTALES*/
+#catalogo-Contenedor #ejemplos-Postales .titulo{
+    text-transform: uppercase;
+}
+#catalogo-Contenedor #todas-postales{
+    padding: 0 20px;
 }
 
