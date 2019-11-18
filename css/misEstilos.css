@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.colorFondoMain {
+    background-color: #EDECEA;
+}
+
+.icono {
+    font-size: 40px;
+}
+
+i.colorLogin {
+    color: #3a73a1;
+    margin-right: 10px;
+}
+
+.tamanoLogo {
+    font-size: 40px;
+}
+
+nav {
+    background-color: #3a73a1;
+}
+
+.colorTablaIndex {
+    background-color: white;
+}
+
+.colorTodasCat {
+    background-color: #5AC9C9;
+}
+
+.colorSeccionIndex {
+    background-color: #F7D8A3;
+}
+
+.borde {
+    border: 2px lightgrey solid;
+}
+
+.colorLetrasAzul {
+    color: #3a73a1;
+}
+
+.colorLetrasGris {
+    color: grey;
+}
+
+.estiloCursiva {
+    font-style: italic;
+}
+
+.estiloNegritas {
+    font-weight: 700;
+}
+
+.tamanoLetras {
+    font-size: 22px;
+}
+
+main.colorFondoMain .colorTablaIndex {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #707070!important;
+}
+
+footer .row.center {
+    padding-top: 25px;
+}

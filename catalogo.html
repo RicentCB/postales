@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="js/validetta/dist/validetta.min.css" rel="stylesheet">
+    <link href="js/confirm/dist/jquery-confirm.min.css" rel="stylesheet">
+    <link href="css/misEstilos.css" rel="stylesheet">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="js/validetta/dist/validetta.min.js"></script>
+    <script src="js/validetta/localization/validettaLang-es-ES.js"></script>
+    <script src="js/confirm/dist/jquery-confirm.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper container">
+                <a class="white-text tamanoLogo" href="login.html">postalesESCOM</a>
+                <a href="#" data-target="menu-fon" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Algo</a></li>
+                    <li><a href="#">Algo</a></li>
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="id_categorias">Categorias 
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        <ul id="id_categorias" class="dropdown-content">
+                            <li><a href="#">Sentimientos</a></li>
+                            <li><a href="#">Festejos</a></li>
+                            <li><a href="#">Invitaciones</a></li>
+                            <li><a href="#">Agradecientos</a></li>
+                            <li><a href="#">Otros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="menu-fon">
+            <li><a href="#">Algo</a></li>
+            <li><a href="#">Algo</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger" data-target="id_subcategorias">Categorias 
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+                <ul id="id_subcategorias" class="dropdown-content">
+                    <li><a href="#">Sentimientos</a></li>
+                    <li><a href="#">Festejos</a></li>
+                    <li><a href="#">Invitaciones</a></li>
+                    <li><a href="#">Agradecientos</a></li>
+                    <li><a href="#">Otros</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main class="colorFondoMain">
+        <div class="container">
+            <div class="row colorTablaIndex">
+                <h4 class="colorLetrasAzul">Postales Virtuales: Categoria</h4>
+                <p class="grey-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quisquam distinctio beatae quae blanditiis voluptatem eaque, ducimus laboriosam facere! Beatae deserunt quidem dolor numquam ipsa maiores assumenda nesciunt nisi eos. Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Officia, minima deleniti adipisci architecto reprehenderit recusandae sed ea, et doloribus quisquam nostrum consequuntur pariatur aut cum! Molestiae eos sit maxime sapiente?</p>
+            </div>
+            <div class="row">
+                <div class="col l3">
+                    <p class="estiloCursiva tamanoLetras colorLetrasAzul">Todas las Categorias</p>
+                    <div class="colorTablaIndex">
+                        <div class="valign-wrapper">
+                            <i class="fas fa-heart prefix colorLogin"></i>
+                            <p class="grey-text estiloNegritas">SENTIMIENTOS</p>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Amor</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Felicidad</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Tristeza</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Enojo</a>
+                        </div>
+                        <hr style="border: 1px solid #fafafa;">
+                        <div class="valign-wrapper">
+                            <i class="fas fa-calendar-alt prefix colorLogin"></i>
+                            <p class="grey-text estiloNegritas">FESTIVIDADES</p>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">San Valentin</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Día de las madres</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Día de los padress</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Día del niño</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Día del abuelo</a>
+                        </div>
+                        <hr style="border: 1px solid #fafafa;">
+                        <div class="valign-wrapper">
+                            <i class="fas fa-gifts prefix colorLogin"></i>
+                            <p class="grey-text estiloNegritas">INVITACIONES</p>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Fiesta</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Boda</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Bautizos</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Posadas</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">VX años</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Fiesta infantil</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Baby shower</a>
+                        </div>
+                        <hr style="border: 1px solid #fafafa;">
+                        <div class="valign-wrapper">
+                            <i class="fas fa-birthday-cake prefix colorLogin"></i>
+                            <p class="grey-text estiloNegritas">CUMPLEAÑOS</p>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Cumpleaños niño</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Cumpleaños niña</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Cumpleaños familia</a>
+                        </div>
+                        <hr style="border: 1px solid #fafafa;">
+                        <div class="valign-wrapper">
+                            <i class="fas fa-icons prefix colorLogin"></i>
+                            <p class="grey-text estiloNegritas">VARIADAS</p>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Buenos días</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Buenas tardes</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Buenas noches</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Gracias</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Buena suerte</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Perdón</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Mejorate</a>
+                        </div>
+                        <div>
+                            <a class="grey-text" href="#">Signo Zodiacal</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s12 l9">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corporis nesciunt quod amet dolores ea rerum quo? Nesciunt voluptatem repudiandae deleniti id vero dignissimos iure. Consequuntur quas doloremque deleniti tempore?</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="">
+        <div class="row center">
+            <div class="col s4 center"><i class="fab fa-facebook prefix white-text icono"></i></div>
+            <div class="col s4"><i class="fab fa-instagram prefix white-text icono"></i></div>
+            <div class="col s4"><i class="fab fa-twitter prefix white-text icono"></i></div>
+        </div>
+        <div class="row center white-text">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="row center white-text">
+            <p>postalesESCOM</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
