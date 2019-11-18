@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro</title>
-    <link href="fontawesome/css/all.min.css"rel="stylesheet">
-    <link href="materialize/css/materialize.min.css"rel="stylesheet">
-    <link href="js/validetta/dist/validetta.min.css"rel="stylesheet">
-    <link href="js/confirm/dist/jquery-confirm.min.css" rel="stylesheet">
-    <link href="css/misEstilos.css" rel="stylesheet">
-    <script src="jquery/jquery-3.4.1.min.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/validetta/dist/validetta.min.js"></script>
-    <script src="js/validetta/localization/validettaLang-es-ES.js"></script>
-    <script src="js/confirm/dist/jquery-confirm.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // var elems = document.querySelectorAll('.sidenav');
-            // var instances = M.Sidenav.init(elems);
-            M.AutoInit();
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems, options);
-      });
-    </script>
-</head>
-<body>
-    <header class="blue lighten-4">
-        <div class="container"><a class="white-text tamanoLogo" href="login.html">postalesESCOM</a></div>
-    </header>
+<?php
+    include ("header.html");
+?>
     <main class="colorFondoMain valign-wrapper">
         <div class="container">
             <form autocomplete="off">
@@ -100,19 +70,9 @@
             </form>
         </div>
     </main>
-    <footer class="blue lighten-4">
-        <div class="row center">
-            <div class="col s4 center"><i class="fab fa-facebook prefix white-text icono"></i></div>
-            <div class="col s4"><i class="fab fa-instagram prefix white-text icono"></i></div>
-            <div class="col s4"><i class="fab fa-twitter prefix white-text icono"></i></div>
-        </div>
-        <div class="row center white-text">
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="row center white-text">
-            <p>postalesESCOM</p>
-        </div>
-    </footer>
+    <?php
+        include ("footer.html");
+    ?>
     
 </body>
 </html>

@@ -55,7 +55,7 @@
                         <a href="categorias.php?id=''" class="titulo-elemento-categoria">Variadas</a>
                     </div>
                 </div>
-                <a href="catalogo.php" id="ver-catalogo" class="waves-effect waves-light btn">Ver Categorias</a>
+                <a href="catalogo.php" id="ver-catalogo" class="waves-effect waves-light btn blue">Ver Categorias</a>
             </div>
         </div>
     </main>
