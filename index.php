@@ -1,79 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link href="fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="materialize/css/materialize.min.css" rel="stylesheet">
-    <link href="js/validetta/dist/validetta.min.css" rel="stylesheet">
-    <link href="js/confirm/dist/jquery-confirm.min.css" rel="stylesheet">
-    <link href="css/misEstilos.css" rel="stylesheet">
-    <script src="jquery/jquery-3.4.1.min.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/validetta/dist/validetta.min.js"></script>
-    <script src="js/validetta/localization/validettaLang-es-ES.js"></script>
-    <script src="js/confirm/dist/jquery-confirm.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit();
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(elems);
-        });
-    </script>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="nav-wrapper container">
-                <a class="white-text tamanoLogo" href="login.html">postalesESCOM</a>
-                <a href="#" data-target="menu-fon" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Algo</a></li>
-                    <li><a href="#">Algo</a></li>
-                    <li>
-                        <a href="#" class="dropdown-trigger" data-target="id_categorias">Categorias 
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                        <ul id="id_categorias" class="dropdown-content">
-                            <li><a href="#">Sentimientos</a></li>
-                            <li><a href="#">Festejos</a></li>
-                            <li><a href="#">Invitaciones</a></li>
-                            <li><a href="#">Agradecientos</a></li>
-                            <li><a href="#">Otros</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <ul class="sidenav" id="menu-fon">
-            <li><a href="#">Algo</a></li>
-            <li><a href="#">Algo</a></li>
-            <li>
-                <a href="#" class="dropdown-trigger" data-target="id_subcategorias">Categorias 
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-                <ul id="id_subcategorias" class="dropdown-content">
-                    <li><a href="#">Sentimientos</a></li>
-                    <li><a href="#">Festejos</a></li>
-                    <li><a href="#">Invitaciones</a></li>
-                    <li><a href="#">Agradecientos</a></li>
-                    <li><a href="#">Otros</a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
+<?php 
+    include ("header.html");
+?>
     <main class="colorFondoMain valign-wrapper">
         <div class="container section">
             <div class="row">
@@ -200,19 +127,9 @@
             </div>
         </div>
     </main>
-    <footer class="blue lighten-4">
-        <div class="row center">
-            <div class="col s4 center"><i class="fab fa-facebook prefix white-text icono"></i></div>
-            <div class="col s4"><i class="fab fa-instagram prefix white-text icono"></i></div>
-            <div class="col s4"><i class="fab fa-twitter prefix white-text icono"></i></div>
-        </div>
-        <div class="row center white-text">
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="row center white-text">
-            <p>postalesESCOM</p>
-        </div>
-    </footer>
+    <?php
+        include ("footer.html")
+    ?>
 
 </body>
 
