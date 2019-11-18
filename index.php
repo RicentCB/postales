@@ -51,16 +51,16 @@
                     <div id="cumpleanos" class="elemento-categoria col s12 l4">
                         <a href="categorias.php?id=''" class="titulo-elemento-categoria">Cumpleaños</a>
                     </div>
-                    <div id="cumpleanos" class="elemento-categoria col s12 l4">
+                    <div id="variadas" class="elemento-categoria col s12 l4">
                         <a href="categorias.php?id=''" class="titulo-elemento-categoria">Variadas</a>
                     </div>
-                    
                 </div>
+                <a href="catalogo.php" id="ver-catalogo" class="waves-effect waves-light btn">Ver Categorias</a>
             </div>
         </div>
     </main>
     <?php
-        include ("footer.html")
+        include ("footer.html");
     ?>
 
 </body>

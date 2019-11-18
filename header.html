@@ -27,8 +27,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             M.AutoInit();
         });
-    </script>
-    <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems);
@@ -46,21 +44,16 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="menu-login" href="login.html">Inciar Sesion</a></li>
+                    <li><a class="boton-borde" href="login.html">Inciar Sesion</a></li>
                     <li><a href="#">Registrarse</a></li>
-                    <!-- <li>
-                        <a href="#" class="dropdown-trigger" data-target="id_categorias">Categorias 
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                        <ul id="id_categorias" class="dropdown-content">
-                            <li><a href="#">Sentimientos</a></li>
-                            <li><a href="#">Festejos</a></li>
-                            <li><a href="#">Invitaciones</a></li>
-                            <li><a href="#">Agradecientos</a></li>
-                            <li><a href="#">Otros</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </nav>
+        <!-- Menu Lateral (Movil) -->
+        <ul id="menu-fon" class="sidenav">
+            <br>
+            <li><a href="login.html" class="waves-effect"><i class="material-icons">account_box</i>Iniciar Sesion</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="#"><i class="material-icons">add_circle_outline</i>Registrarse</a></li>
+        </ul>
     </header>

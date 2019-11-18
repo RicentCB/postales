@@ -18,8 +18,10 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
 }
 main {
+    margin-top: 64px;
     flex: 1 0 auto;
 }
 .colorFondoMain {
@@ -42,6 +44,18 @@ i.colorLogin {
  ================================= */
 nav#main-menu{
     background-color: #3a73a1;
+    position: fixed;
+    z-index: 10;
+}
+/* ==================================
+    ------ F O O T E R ------
+ ================================= */
+footer {
+    background-color: #707070!important;
+}
+
+footer .row.center {
+    padding-top: 25px;
 }
 /*=================================
     ------- I N D E X ---------
@@ -54,7 +68,8 @@ nav#main-menu{
 /* ------ CONTEDOR CATEGORIAS --- */
 #contenedorCategorias{
     background-color: rgb(255, 255, 255);
-    padding: 0 20px;
+    padding: 10px 30px;
+
 }
 #contenedorCategorias h2{
     text-align: center;
@@ -96,7 +111,7 @@ nav#main-menu{
         background: url("../img/categorias/cumpleanos.jpeg") center center no-repeat;
     }
     #contenedorCategorias .elemento-categoria#variadas{
-        background: url("../img/categorias/cumpleanos.jpeg") center center no-repeat;
+        background: url("../img/categorias/variadas.png") center center no-repeat;
     }
     #contenedorCategorias .elemento-categoria a.titulo-elemento-categoria:hover{
         transform: scale(1.1);
@@ -115,7 +130,9 @@ nav#main-menu{
         transition: .1s .1s transform;
     }
 }
-
+#contenedorCategorias a#ver-catalogo{
+    margin: 10px;
+}
 
 .colorTodasCat {
     background-color: #5AC9C9;
@@ -154,10 +171,3 @@ main.colorFondoMain .colorTablaIndex {
     box-sizing: border-box;
 }
 
-footer {
-    background-color: #707070!important;
-}
-
-footer .row.center {
-    padding-top: 25px;
-}
