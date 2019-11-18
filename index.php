@@ -3,6 +3,7 @@
 ?>
     <main class="colorFondoMain valign-wrapper">
         <div class="container section">
+            <!-- S L I D E R  -->
             <div class="row">
                 <div class="col s12">
                     <div class="slider">
@@ -32,97 +33,28 @@
                     </div>
                 </div>
             </div>
-            <div class="colorTablaIndex borde">
-                <div class="row  valign-wrapper colorTodasCat white-text">
-                    <h5>Todas las categorias</h5>
-                </div>
+            <!-- C A T E G O R I A S -->
+            <div id="contenedorCategorias" class="borde">
+                <h2>Todas las categorias</h2>
                 <div class="row">
-                    <div class="col s12 l4">
-                        <div class="colorSeccionIndex white-text center-align">
-                            <p>Sentimientos/Emociones</p>
-                        </div>
-                        <div>
-                            <a class="grey-text" href="#">Amor</a>
-                            <br>
-                            <a class="grey-text" href="#">Felicidad</a>
-                            <br>
-                            <a class="grey-text" href="#">Tristeza</a>
-                            <br>
-                            <a class="grey-text" href="#">Enojo</a>
-                        </div>
+                    <div id="sentimientos" class="elemento-categoria col s12 l4">
+                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Sentimientos / Emociones</a>
                     </div>
-                    <div class="col s12 l4">
-                        <div class="colorSeccionIndex white-text center-align">
-                            <p>Festividades</p>
-                        </div>
-                        <div>
-                            <a class="grey-text" href="#">San Valentin</a>
-                            <br>
-                            <a class="grey-text" href="#">Día de las madres</a>
-                            <br>
-                            <a class="grey-text" href="#">Día del padre</a>
-                            <br>
-                            <a class="grey-text" href="#">Día del niño</a>
-                            <br>
-                            <a class="grey-text" href="#">Día del abuelo</a>
-                        </div>
+                    <div id="festividades" class="elemento-categoria col s12 l4">
+                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Festividades</a>
                     </div>
-                    <div class="col s12 l4">
-                        <div class="colorSeccionIndex white-text center-align">
-                            <p>Invitaciones</p>
-                        </div>
-                        <div>
-                            <a class="grey-text" href="#">Fiesta</a>
-                            <br>
-                            <a class="grey-text" href="#">Boda</a>
-                            <br>
-                            <a class="grey-text" href="#">Bautizo</a>
-                            <br>
-                            <a class="grey-text" href="#">Posadas</a>
-                            <br>
-                            <a class="grey-text" href="#">VX años</a>
-                            <br>
-                            <a class="grey-text" href="#">Fiesta infantil</a>
-                            <br>
-                            <a class="grey-text" href="#">Baby shower</a>
-                        </div>
+                    <div id="invitaciones" class="elemento-categoria col s12 l4">
+                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Invitaciones</a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 l4">
-                        <div class="colorSeccionIndex white-text center-align">
-                            <p>Cumpleaños</p>
-                        </div>
-                        <div>
-                            <a class="grey-text" href="#">Cumpleaños niño</a>
-                            <br>
-                            <a class="grey-text" href="#">Cumpleaños niña</a>
-                            <br>
-                            <a class="grey-text" href="#">Cumpleaños familia</a>
-                        </div>
+                    <div id="cumpleanos" class="elemento-categoria col s12 l4">
+                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Cumpleaños</a>
                     </div>
-                    <div class="col s12 l4">
-                        <div class="colorSeccionIndex white-text center-align">
-                            <p>Variadas</p>
-                        </div>
-                        <div>
-                            <a class="grey-text" href="#">Buenos días</a>
-                            <br>
-                            <a class="grey-text" href="#">Buenas tardes</a>
-                            <br>
-                            <a class="grey-text" href="#">Buenas noches</a>
-                            <br>
-                            <a class="grey-text" href="#">Gracias</a>
-                            <br>
-                            <a class="grey-text" href="#">Buena suerte</a>
-                            <br>
-                            <a class="grey-text" href="#">Perdón</a>
-                            <br>
-                            <a class="grey-text" href="#">Mejorate</a>
-                            <br>
-                            <a class="grey-text" href="#">Signo Zodiacal</a>
-                        </div>
+                    <div id="cumpleanos" class="elemento-categoria col s12 l4">
+                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Variadas</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
