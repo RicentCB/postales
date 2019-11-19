@@ -93,25 +93,23 @@ footer .row.center {
 @media only screen and (min-width: 993px){
     #contenedorCategorias .elemento-categoria{
         height: 210px;
-        margin: 0 10px;
+        margin: 10px;
         width: calc(33.33% - 20px);
-    }
-    #contenedorCategorias .elemento-categoria{
         background-size: cover!important;
     }
-    #contenedorCategorias .elemento-categoria#sentimientos{
-        background: url("../img/categorias/sentimientos2.jpg") center center no-repeat;
-    }
-    #contenedorCategorias .elemento-categoria#festividades{
+    #contenedorCategorias .elemento-categoria:nth-child(1){
         background: url("../img/categorias/festividades.png") center center no-repeat;
     }
-    #contenedorCategorias .elemento-categoria#invitaciones{
+    #contenedorCategorias .elemento-categoria:nth-child(2){
+        background: url("../img/categorias/sentimientos2.jpg") center center no-repeat;
+    }
+    #contenedorCategorias .elemento-categoria:nth-child(3){
         background: url("../img/categorias/invitaciones.jpg") center center no-repeat;
     }
-    #contenedorCategorias .elemento-categoria#cumpleanos{
+    #contenedorCategorias .elemento-categoria:nth-child(4){
         background: url("../img/categorias/cumpleanos.jpeg") center center no-repeat;
     }
-    #contenedorCategorias .elemento-categoria#variadas{
+    #contenedorCategorias .elemento-categoria:nth-child(5){
         background: url("../img/categorias/variadas.png") center center no-repeat;
     }
     #contenedorCategorias .elemento-categoria a.titulo-elemento-categoria:hover{
@@ -147,6 +145,13 @@ footer .row.center {
     background-color: white;
     padding: 10px 20px;
     height: 100%;
+    border-bottom: 1px solid #ccc;
+}
+@media only screen and (min-width: 600px){
+    #catalogo-Contenedor #seleccionar-Categoria{
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
 }
 #catalogo-Contenedor #seleccionar-Categoria > p{
     text-align: center;
@@ -157,13 +162,38 @@ footer .row.center {
 }
 #catalogo-Contenedor #seleccionar-Categoria .titulo-categoria{
     text-transform: uppercase;
+    display: block;
     letter-spacing: 1px;
+    margin-top: 10px;
+    padding: .2em .5em;
+    border-bottom: white 1px solid;
+}
+#catalogo-Contenedor #seleccionar-Categoria .titulo-categoria:hover{
+    border-bottom: rgb(20, 73, 117) 1px solid;
 }
 /*IMAGENES DE LAS POSTALES*/
 #catalogo-Contenedor #ejemplos-Postales .titulo{
     text-transform: uppercase;
+    margin-top: 35px;
 }
 #catalogo-Contenedor #todas-postales{
     padding: 0 20px;
 }
-
+/* Efectos */
+#catalogo-Contenedor #todas-postales .card{
+    transition: all .5s .1s;
+    cursor: default;
+}
+#catalogo-Contenedor #todas-postales .card:hover{
+    transform: scale(1.1);
+    transition: all .5s .1s;
+}
+#catalogo-Contenedor #todas-postales .card span.card-title{
+    background-color: none;
+    width: 100%;
+    transition: all .5s .1s;
+}
+#catalogo-Contenedor #todas-postales .card:hover span.card-title{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s .1s;
+}

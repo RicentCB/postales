@@ -1,4 +1,5 @@
 <?php 
+    require_once("php/metodos_categorias.php");
     include ("header.html");
 ?>
     <main class="colorFondoMain valign-wrapper">
@@ -37,23 +38,19 @@
             <div id="contenedorCategorias" class="borde">
                 <h2>Todas las categorias</h2>
                 <div class="row">
-                    <div id="sentimientos" class="elemento-categoria col s12 l4">
+                    <?php
+                        $todasCategorias = Categorias::leerCategorias();
+                        $impCat = "";
+                        foreach ($todasCategorias as $categoria) {
+                            $impCat .= '<div id="'.$categoria["nombre_Categoria"].'" class="elemento-categoria col s12 14">';
+                                $impCat .= '<a href="catalogo.php?id='.$categoria["ID_categoria"].'" class="titulo-elemento-categoria">'.$categoria["nombre_Categoria"].'</a>';
+                            $impCat .= '</div>';
+                        }
+                        echo $impCat;
+                    ?>
+                    <!-- <div id="sentimientos" class="elemento-categoria col s12 14">
                         <a href="categorias.php?id=''" class="titulo-elemento-categoria">Sentimientos / Emociones</a>
-                    </div>
-                    <div id="festividades" class="elemento-categoria col s12 l4">
-                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Festividades</a>
-                    </div>
-                    <div id="invitaciones" class="elemento-categoria col s12 l4">
-                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Invitaciones</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="cumpleanos" class="elemento-categoria col s12 l4">
-                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Cumpleaños</a>
-                    </div>
-                    <div id="variadas" class="elemento-categoria col s12 l4">
-                        <a href="categorias.php?id=''" class="titulo-elemento-categoria">Variadas</a>
-                    </div>
+                    </div> -->
                 </div>
                 <a href="catalogo.php" id="ver-catalogo" class="waves-effect waves-light btn blue">Ver Categorias</a>
             </div>
