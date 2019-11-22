@@ -4,7 +4,7 @@
 
     class Categorias{
         //Leer las categorias
-        static public function leerCategorias($elemento = NULL, $valor = NULL){
+        static public function leerCategorias($elemento = NULL, $valor = NULL, $table){
             if($elemento != NULL){//Seleccionar una categoria especifica
                 $stmt = Conexion::connect()->prepare("SELECT * FROM categorias WHERE $elemento LIKE :elemento "); 
                 $stmt -> bindParam(":elemento", $valor, PDO::PARAM_STR);
